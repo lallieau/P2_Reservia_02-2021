@@ -27,14 +27,16 @@ nav .nav-mobile{
 .justify-between{justify-content: space-between;}
 .justify-around{justify-content: space-around;}
 
-a{padding: 10px;}
-.active{color: #0065fc;border-bottom: 3px solid #0065fc;}
-
-.border a{
-    border-bottom: 3px solid #f2f2f2;
+a{
+    padding: 10px; 
     width: 100%;
     text-align: center;
 }
+
+.active{color: #0065fc; border-bottom: 3px solid #0065fc;}
+.default{border-bottom: 3px solid #f2f2f2;}
+
+.sign-up{font-weight: bold; color: #0065fc;}
 
 /* Card */
 .block-card{padding: 5px 5px 20px 5px;}
