@@ -1,28 +1,42 @@
 /* General */
-body{
-    max-width:375px;
-    font-family: 'Raleway', sans-serif;
-    margin: 0 auto;
-}
+body{max-width:375px; font-family: 'Raleway', sans-serif; margin: 0 auto;}
 
+/* Text - Typography */
 h1, h2{font-size: 23px; font-weight: bold; margin: 0; padding-bottom: 5px;}
-h3{font-size: 20px; margin: 0; padding-bottom: 5px; font-weight: bold;}
-p{font-size: 17px; margin: 0; padding-bottom: 5px;}
-a{text-decoration: none; color: #000000; font-size: 17px;}
-li{list-style: none;padding-bottom: 10px;} 
-ul{margin: 0; padding: 20px 0px;}
 
+h3{font-size: 20px; margin: 0; padding-bottom: 5px; font-weight: bold;}
+
+p{font-size: 17px; margin: 0; padding-bottom: 5px;}
+
+a{text-decoration: none; color: #000000; font-size: 17px;}
 
 /* Font Awesome */
 .fa, .fa-star{font-size: 13px; color: #dddddd;}
-.blue{font-size: 13px; color: #0065FC;}
-
-
+.blue-star{font-size: 13px; color: #0065FC;}
+.fa-chart-line{font-size: 20px;}
 
 /* Header */
+nav{display: flex; flex-direction: column;}
 nav img{width: 100px;}
 
-/* card */
+nav .nav-mobile{
+    display: flex;
+    align-items: center;
+}
+
+.justify-between{justify-content: space-between;}
+.justify-around{justify-content: space-around;}
+
+a{padding: 10px;}
+.active{color: #0065fc;border-bottom: 3px solid #0065fc;}
+
+.border a{
+    border-bottom: 3px solid #f2f2f2;
+    width: 100%;
+    text-align: center;
+}
+
+/* Card */
 .block-card{padding: 5px 5px 20px 5px;}
 
 article{
@@ -33,7 +47,7 @@ article{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
 }
 
-.image {
+.block-card-image {
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -41,11 +55,11 @@ article{
     border-radius: 15px 15px 0px 0px;
     }
     
-.image img {
+.block-card-image img {
 display: none;
 }
 
-.card-description{
+.block-card-description{
     padding: 10px 0px 10px 10px;
 }
 
@@ -56,18 +70,18 @@ figcaption{
     padding-bottom: 5px;
     font-weight: bold;
 }
-/* card most popular */
+
+/* Card - most popular */
 .bg-color{background-color: #f2f2f2;}
 .bg-color article{display: flex;}
-.fa-chart-line{font-size: 20px;}
 
-.bg-color .image{
+.bg-color .block-card-image{
     width: 50%;
     border-radius: 15px 0px 0px 15px;
     height: 150px;
 }
 
-.bg-color article .card-description{
+.bg-color article .block-card-description{
     width: 90%;
     padding: 15px 0px 0px 18px;
 }
@@ -79,9 +93,13 @@ figcaption{
     justify-content: space-between;
 }
 
-.bg-color .fa-star{margin: 35px 0px 0px 0px; font-size: 13px;}
+.bg-color .fa-star{margin: 35px 0px 0px 0px;}
 
 /* Footer */
 footer{
     padding: 50px 30px
 }
+
+li{list-style: none;padding-bottom: 10px;} 
+
+ul{margin: 0; padding: 20px 0px;}
