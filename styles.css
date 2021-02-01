@@ -6,9 +6,9 @@ h1, h2{font-size: 23px; font-weight: bold; margin: 0; padding-bottom: 5px;}
 
 h3{font-size: 20px; margin: 0; padding-bottom: 5px; font-weight: bold;}
 
-p{font-size: 17px; margin: 0; padding-bottom: 5px;}
+p{font-size: 16px; margin: 0; padding-bottom: 5px;}
 
-a{text-decoration: none; color: #000000; font-size: 17px;}
+a{text-decoration: none; color: #000000; font-size: 16px;}
 
 /* Font Awesome */
 .fa, .fa-star{font-size: 13px; color: #dddddd;}
@@ -16,6 +16,8 @@ a{text-decoration: none; color: #000000; font-size: 17px;}
 .fa-chart-line{font-size: 20px;}
 
 /* Header */
+
+    /* Header - Nav */
 nav{display: flex; flex-direction: column;}
 nav img{width: 100px;}
 
@@ -24,22 +26,70 @@ nav .nav-mobile{
     align-items: center;
 }
 
-.justify-between{justify-content: space-between;}
-.justify-around{justify-content: space-around;}
-
-a{
+.nav-mobile a{
     padding: 10px; 
-    width: 100%;
     text-align: center;
 }
 
-.active{color: #0065fc; border-bottom: 3px solid #0065fc;}
-.default{border-bottom: 3px solid #f2f2f2;}
+.justify-between{justify-content: space-between; padding: 0px 10px 0px 10px;}
+.justify-around{justify-content: space-around;}
 
+.active{color: #0065fc; border-bottom: 3px solid #0065fc;width: 100%;}
+.default{border-bottom: 3px solid #f2f2f2;width: 100%;}
 .sign-up{font-weight: bold; color: #0065fc;}
+
+    /* Header - Search */
+.search{padding: 20px 20px 20px 20px;}
+
+form.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form.search input[type=text] {
+    padding: 14px;
+    font-size: 17px;
+    border: 1px solid #dddddd;
+  }
+
+form.search button {
+    margin-left: -13px;
+    padding: 16px;
+    background: #0065fc;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #ffffff;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.fa-map-marker-alt{
+    background: #f2f2f2;
+    padding: 18px;
+    font-size: 15px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.info{
+    display: flex;
+    align-items:flex-start;
+    margin-top: 20px;
+}
+
+.fa-info-circle{color: #0065fc;margin-right: 10px;}
 
 /* Card */
 .block-card{padding: 5px 5px 20px 5px;}
+
+.block-card a{font-weight: bold; font-size: 17px;}
 
 article{
     background-color: #ffffff;

@@ -21,39 +21,41 @@
                 <a class="default" href="#">Activités</a>
             </div>
         </nav>
-        <div>
+        <div class="search">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
 
-            <form action="/action_page.php">
-                <input type="search"><input type="submit" value="Submit">
+            <form class="search" action="/action_page.php">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" name="search">
+                <button type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
             </form>
 
             <form action="/action_page.php">
-                <p>Filtres</p>
+                <h3>Filtres</h3>
                 <div>
-                    <i class="fas fa-info-circle"></i>
-                    <input type="radio" id="eco" name="filter" value="economique">
+                    <input type="checkbox" id="eco" name="filter" value="economique">
                     <label for="eco">Economique</label>
                 </div>
                 <div>
-                    <i class="fas fa-info-circle"></i>
-                    <input type="radio" id="family" name="filter" value="family">
+                    <input type="checkbox" id="family" name="filter" value="family">
                     <label for="family">Familial</label>
                 </div>
                 <div>
-                    <i class="fas fa-info-circle"></i>
-                    <input type="radio" id="romantic" name="filter" value="romantic">
+                    <input type="checkbox" id="romantic" name="filter" value="romantic">
                     <label for="romantic">Romantique</label>
                 </div>
                 <div>
-                    <i class="fas fa-info-circle"></i>
-                    <input type="radio" id="animal" name="filter" value="animal">
+                    <input type="checkbox" id="animal" name="filter" value="animal">
                     <label for="animal">Animaux autorisés</label>
                 </div>
             </form>
+            <div class="info">
             <i class="fas fa-info-circle"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville.</p>
+            </div>
         </div>
     </header>
     <main>
