@@ -83,7 +83,7 @@ form.search button {
     border: 0;
 }
 
-.card{
+.block-card__article{
     background-color: #ffffff;
     margin: 10px;
     border-radius: 20px;
@@ -91,7 +91,7 @@ form.search button {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
 }
 
-.card__image {
+.block-card-article__image {
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -99,11 +99,11 @@ form.search button {
     border-radius: 15px 15px 0px 0px;
     }
     
-.card__image img {
+.block-card-article__image img {
 display: none;
 }
 
-.card__description{
+.block-card-article__description{
     padding: 10px 0px 10px 10px;
 }
 
@@ -119,13 +119,13 @@ figcaption{
 .block-card--popular{background-color: #f2f2f2;}
 .block-card--popular article{display: flex;}
 
-.block-card--popular .card__image{
+.block-card--popular .block-card-article__image{
     width: 50%;
     border-radius: 15px 0px 0px 15px;
     height: 150px;
 }
 
-.block-card--popular article .card__description{
+.block-card--popular article .block-card-article__description{
     width: 90%;
     padding: 15px 0px 0px 18px;
 }
