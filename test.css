@@ -1,0 +1,80 @@
+img{
+    width: 100px;
+}
+main{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "block-lodging block-lodging--popular"
+        "block-activity block-activity";
+}
+
+/* Hébergements */
+
+.block-lodging {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "title title title"
+        "card-1 card-2 card-3"
+        "card-4 card-5 card-6";
+    grid-area: block-lodging;
+}
+
+.block-lodging__title { grid-area: title; }
+.block-lodging-card--1 { grid-area: card-1; }
+.block-lodging-card--2 { grid-area: card-2; }
+.block-lodging-card--3 { grid-area: card-3; }
+.block-lodging-card--4 { grid-area: card-4; }
+.block-lodging-card--5 { grid-area: card-5; }
+.block-lodging-card--6 { grid-area: card-6; }
+
+/* Hébergements les plus populaires */
+
+.block-lodging--popular{
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "title"
+      "card-1"
+      "card-2"
+      "card-3";
+    grid-area: block-lodging--popular;
+}
+
+.block-lodging-popular__title { 
+    grid-area: title;
+    display: flex;
+}
+.block-lodging-popular-card--1 { grid-area: card-1;}
+.block-lodging-popular-card--2 { grid-area: card-2;}
+.block-lodging-popular-card--3 { grid-area: card-3;}
+
+/* Activités */
+
+.block-activity {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "title title title title"
+    "card-1 card-2 card-4 card-5"
+    "card-1 card-3 card-4 card-6";
+    grid-area: block-activity;
+  }
+
+.block-activity__title { grid-area: title; }
+.block-activity-card--1{ grid-area: card-1; }
+.block-activity-card--2 { grid-area: card-2; }
+.block-activity-card--3 { grid-area: card-3; }
+.block-activity-card--4 { grid-area: card-4; }
+.block-activity-card--5 { grid-area: card-5; }
+.block-activity-card--6 { grid-area: card-6; }
