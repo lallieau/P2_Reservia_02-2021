@@ -1,11 +1,40 @@
-img{
-    width: 100px;
+/* Général */
+
+body{font-family: 'Raleway', sans-serif; margin: 0 auto;}
+
+img{width: 100px;}
+
+h1, h2 { font-size: 23px; font-weight: bold; }
+h3 { font-size: 20px; font-weight: bold; }
+p { font-size: 16px; }
+a { text-decoration: none; color: #000000; font-size: 16px; }
+
+.fa, .fa-star{font-size: 13px; color: #dddddd;}
+.blue-star{font-size: 13px; color: #0065FC;}
+.fa-chart-line{font-size: 20px;}
+
+/* Content */
+
+.block-lodging__card, .block-lodging-popular__card, .block-activity__card{
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
 }
-main{
+
+.block-lodging__card img, .block-activity__card img{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+main {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
+    gap: 20px 20px;
     grid-template-areas:
         "block-lodging block-lodging--popular"
         "block-activity block-activity";
@@ -14,6 +43,7 @@ main{
 /* Hébergements */
 
 .block-lodging {
+    background-color: #f2f2f2;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 1fr 1fr;
@@ -33,10 +63,25 @@ main{
 .block-lodging-card--5 { grid-area: card-5; }
 .block-lodging-card--6 { grid-area: card-6; }
 
+/*
+.block-lodging__card{
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 40% 60%;
+    grid-template-areas: 
+    "img"
+    "description";
+}
+
+.block-lodging-card__img { grid-area: img;   justify-self: stretch;
+}
+.block-lodging-card__description { grid-area: description; }
+*/
+
 /* Hébergements les plus populaires */
 
 .block-lodging--popular{
-    background-color: bisque;
+    background-color: #f2f2f2;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr 1fr 1fr;
@@ -56,6 +101,8 @@ main{
 .block-lodging-popular-card--1 { grid-area: card-1;}
 .block-lodging-popular-card--2 { grid-area: card-2;}
 .block-lodging-popular-card--3 { grid-area: card-3;}
+
+.block-lodging-popular__card {display: flex;}
 
 /* Activités */
 
