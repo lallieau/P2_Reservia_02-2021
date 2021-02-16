@@ -284,8 +284,7 @@ main {
 }
 
 .ad-featured-card__img {
-  width: 130px;
-  height: 152px;
+  width: 40%;
   object-fit: cover;
   border-radius: 15px 0px 0px 15px;
 }
@@ -295,7 +294,7 @@ main {
 }
 
 .ad-featured-card__info p {
-  padding: 0.625rem 0 2.8125rem;
+  padding: 0.625rem 0;
 }
 
 /* activity */
