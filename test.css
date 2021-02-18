@@ -184,7 +184,6 @@ main {
 .ad-featured__card,
 .activity__card {
   background-color: #ffffff;
-  margin: 0.5625rem;
   padding: 0.3125rem;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
@@ -208,7 +207,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50px 300px 300px 300px 300px 300px 300px;
-  gap: 0.625rem 0.625rem;
+  gap: 1.625rem 1.625rem;
   grid-template-areas:
     "title"
     "a"
@@ -260,7 +259,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50px 180px 180px 180px;
-  gap: 0.625rem 0.625rem;
+  gap: 1.625rem 1.625rem;
   grid-template-areas:
     "title"
     "a"
@@ -303,7 +302,7 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50px 300px 300px 300px 300px 300px 300px;
-  gap: 0.625rem 0.625rem;
+  gap: 1.625rem 1.625rem;
   grid-template-areas:
     "title"
     "a"
