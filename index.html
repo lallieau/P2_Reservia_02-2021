@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-    <title>Reservia - Page d'accueil</title>
+    <title>Reservia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
@@ -20,20 +21,23 @@
   </head>
 
   <body>
-
     <header>
       <nav class="header-nav">
-        <a class="header-nav__link header-nav-link--logo" href="#"
+        <a class="header-nav__link header-nav-link--logo" href=""
           ><img
             class="header-nav-link__img"
             src="images/logo/Reservia.svg"
             alt="logo réservia"
         /></a>
         <div class="header-nav--anchor">
-          <a class="header-nav__link header-nav__link--active" href="#">Hébergements</a>
-          <a class="header-nav__link" href="#">Activités</a>
+          <a class="header-nav__link header-nav__link--active" href="#ad"
+            >Hébergements</a
+          >
+          <a class="header-nav__link" href="#activity">Activités</a>
         </div>
-        <a class="header-nav__link header-nav-link--register" href="#">S'inscrire</a>
+        <a class="header-nav__link header-nav-link--register" href=""
+          >S'inscrire</a
+        >
       </nav>
       <div class="header-search">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -50,19 +54,19 @@
           <h3>Filtres</h3>
           <div class="header-search-filter__item">
             <button>
-              <i class="fas fa-info-circle icon-filter"></i>
+              <i class="fas fa-money-bill-wave icon-filter"></i>
               Economique
             </button>
             <button>
-              <i class="fas fa-info-circle icon-filter"></i>
+              <i class="fas fa-child icon-filter"></i>
               Familial
             </button>
             <button>
-              <i class="fas fa-info-circle icon-filter"></i>
+              <i class="fas fa-heart icon-filter"></i>
               Romantique
             </button>
             <button>
-              <i class="fas fa-info-circle icon-filter"></i>
+              <i class="fas fa-dog icon-filter"></i>
               Animaux autorisés
             </button>
           </div>
@@ -76,7 +80,7 @@
 
     <main>
       <section class="ad">
-        <h2 class="ad__title">Hébergements à Marseille</h2>
+        <h2 class="ad__title" id="ad">Hébergements à Marseille</h2>
 
         <a href="#" class="ad__card">
           <img
@@ -259,7 +263,7 @@
       </section>
 
       <section class="activity">
-        <h2 class="activity__title">Activités à Marseille</h2>
+        <h2 class="activity__title" id="activity">Activités à Marseille</h2>
 
         <a href="#" class="activity__card large-card-1">
           <img
@@ -341,6 +345,5 @@
         </ul>
       </div>
     </footer>
-    
   </body>
 </html>

@@ -10,7 +10,6 @@
       "e f";
   }
 
-
   /* activity */
   .activity {
     grid-template-columns: 1fr 1fr;
@@ -25,26 +24,45 @@
   .activity-card__img {
     height: 80%;
   }
-
-}
-
-@media (min-width: 768px){
-
+  /* Footer */
   footer {
     padding: 3.125rem;
     display: flex;
-    justify-content: space-around;
-  }
-  
-  .ad-featured__card {
-   /* width: 600px; */
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
 @media (min-width: 992px) {
+  /* header-nav */
+  .header-nav--anchor {
+    width: auto;
+    order: initial;
+  }
+
+  .header-nav__link {
+    border-bottom: none;
+    padding: 0rem 1.25rem 0.625rem 4rem;
+  }
+
+  .header-nav-link--logo {
+    padding: 0;
+  }
+
+  /* header-search */
+  .submit-text {
+    display: block;
+  }
+
+  .icon-search {
+    display: none;
+  }
+
+  /* ad */
   .ad {
     background-color: #f2f2f2;
     border-radius: 20px;
+    margin: 1.25rem;
 
     grid-template-columns: repeat(3, 290px);
     grid-template-rows: 50px 250px 250px;
@@ -52,18 +70,25 @@
       "title title title"
       "a b c"
       "d e f";
-    margin: 20px;
   }
 
   .ad-card__img {
     height: 130px;
   }
 
+  /* ad-featured */
   .ad-featured {
     background-color: #f2f2f2;
     border-radius: 20px;
-    margin: 20px;
+    margin: 1.25rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 180px 180px;
+    grid-template-areas:
+      "title title"
+      "a b"
+      "c .";
   }
+
   /* activity */
 
   .activity {
@@ -86,139 +111,16 @@
   .large-card-2 .activity-card__img {
     height: 90%;
   }
-
 }
-/*
+
 @media (min-width: 1200px) {
-
-  main {
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-  .ad {
-    grid-template-columns: repeat(3, 350px);
-  }
-
-
-}
-*/
-@media (min-width: 1200px) {
-
-  main{max-width: 1400px;}
-
-  .header-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .header-nav--anchor {
-    margin-left: auto;
-  }
-
-  .header-nav__link {
-    text-align: center;
-    padding: 0rem 1.25rem 0rem 0rem;
-  }
-
-  .header-nav__link--active {
-    color: #0065fc;
-  }
-
-  .header-nav-link--register {
-    color: #0065fc;
-    font-weight: bold;
-  }
-  /* header-search */
-
-  .header-search {
-    margin: 1.25rem 0;
-  }
-
-  .header-search h1 {
-    padding: 0 0 1.0625rem;
-  }
-  .header-search__city {
-    display: flex;
-    align-items: center;
-    padding: 1.25rem 0 0;
-  }
-
-  .header-search__city input[type="text"] {
-    padding: 0.875rem;
-    font-size: 1.0625rem;
-    border: 1px solid #dddddd;
-  }
-
-  .header-search__city button {
-    padding: 1rem;
-    background: #0065fc;
-    color: white;
-    font-size: 0.9375rem;
-    border: 1px solid #ffffff;
-    border-left: none;
-    border-radius: 0rem 1.25rem 1.25rem 0rem;
-  }
-
-  .icon-location {
-    background: #f2f2f2;
-    padding: 1.125rem;
-    font-size: 0.9375rem;
-    border-radius: 0.9375rem 0rem 0rem 0.9375rem;
-  }
-
-  .info {
-    display: flex;
-    align-items: flex-start;
-    margin-top: 1.25rem;
-  }
-
-  .icon-info {
-    color: #0065fc;
-    margin-right: 0.625rem;
-  }
-
-  .header-search__filter {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 1.875rem 0;
-  }
-
-  .header-search-filter__item {
-    display: flex;
-  }
-
-  .header-search-filter__item button {
-    align-items: center;
-    font-weight: bold;
-    border: 3px solid #f2f2f2;
-    border-radius: 3rem;
-    padding-right: 1.9em;
-    margin-left: 1.125rem;
-    background-color: #ffffff;
-    font-size: 0.9375rem;
-  }
-
-  .icon-filter {
-    border-radius: 50%;
-    background-color: #deebff;
-    color: #0065fc;
-    width: 1rem;
-    height: 1rem;
-    padding: 1.1rem;
-    margin-right: 1.1rem;
-    margin-left: -0.5rem;
-  }
-
-  .header-search__info {
-    display: flex;
+  main,
+  header {
+    max-width: 1400px;
+    margin: auto;
   }
 
   /* Main */
-
   main {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -228,465 +130,41 @@
     justify-content: center;
   }
 
-
   /* ad */
-
   .ad {
-    background-color: #f2f2f2;
-    border-radius: 20px;
-
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 50px 1fr 1fr;
-    gap: 1.625rem 1.625rem;
-    grid-template-areas:
-      "title title title"
-      "a b c"
-      "d e f";
-    grid-area: ad;
-
-    padding: 1.25rem;
-  }
-
-  .ad__title {
-    grid-area: title;
-    margin: 0.625rem;
-  }
-
-  .ad-card__info {
-    margin: 0.625rem;
-  }
-
-  .ad-card__info p {
-    padding: 0.625rem 0;
-  }
-
-  .button {
-    font-weight: bold;
-    font-size: 1.0625rem;
-    background: 0;
-    border: 0;
-    text-align: left;
-    margin: 0.625rem;
-    cursor: pointer;
-  }
-
-  .ad-card__img {
-    width: 100%;
-    height: 125px;
-    object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
   }
 
   /* ad-featured */
-
   .ad-featured {
-    background-color: #f2f2f2;
-    border-radius: 20px;
-
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px 1fr 1fr 1fr;
-    gap: 1.625rem 1.625rem;
     grid-template-areas:
       "title"
       "a"
       "b"
       "c";
-    grid-area: ad-featured;
-
-    padding: 1.25rem;
-  }
-
-  .ad-featured__title {
-    grid-area: title;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin: 0.625rem;
-  }
-
-  .ad-featured__card {
-    display: flex;
   }
 
   .ad-featured-card__img {
-    width: 130px;
-    height: 152px;
-    object-fit: cover;
-    border-radius: 15px 0px 0px 15px;
-  }
-
-  .ad-featured-card__info {
-    padding: 1.25rem 1.25rem 0 1.25rem;
-  }
-
-  .ad-featured-card__info p {
-    padding: 0.625rem 0 2.8125rem;
+    width: 35%;
+    height: 158px;
   }
 
   /* activity */
-
   .activity {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 50px 250px 250px;
-    gap: 1.625rem 1.625rem;
     grid-template-areas:
       "title title title title"
       "a b d e"
       "a c d f";
-    grid-area: activity;
-
     margin-top: 1.875rem;
-  }
-
-  .activity__title {
-    grid-area: title;
-    margin: 0.625rem;
-  }
-  .large-card-1 {
-    grid-area: a;
-  }
-  .large-card-2 {
-    grid-area: d;
-  }
-
-  .activity__card {
-    padding: 0;
-  }
-
-  .activity-card__title {
-    padding: 0.8125rem 0 0.625rem 0.9375rem;
-    font-size: 1rem;
-    margin: 0;
-    padding-bottom: 0.3125rem;
-    font-weight: bold;
-  }
-
-  .activity-card__img {
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
-  }
-
-  .large-card-1 .activity-card__img,
-  .large-card-2 .activity-card__img {
-    height: 90%;
   }
 
   /* Footer */
-
   footer {
-    background-color: #f2f2f2;
-    display: flex;
-    height: 200px;
-    padding: 3.125rem 3.125rem 0;
-  }
-
-  .footer-nav {
-    display: flex;
-    flex-direction: column;
-    padding-right: 12.5rem;
-  }
-
-  .footer-nav li {
-    padding-top: 0.625rem;
-  }
-
-  .footer-nav h3 {
-    padding-bottom: 0.625rem;
+    justify-content: space-around;
   }
 }
-
-/*
-@media (min-width: 2000px) {
-
-  .header-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .header-nav--anchor {
-    margin-left: auto;
-  }
-
-  .header-nav__link {
-    text-align: center;
-    padding: 0rem 1.25rem 0rem 0rem;
-  }
-
-  .header-nav__link--active {
-    color: #0065fc;
-  }
-
-  .header-nav-link--register {
-    color: #0065fc;
-    font-weight: bold;
-  }
-
-  .header-search {
-    margin: 1.25rem 0;
-  }
-
-  .header-search h1 {
-    padding: 0 0 1.0625rem;
-  }
-  .header-search__city {
-    display: flex;
-    align-items: center;
-    padding: 1.25rem 0 0;
-  }
-
-  .header-search__city input[type="text"] {
-    padding: 0.875rem;
-    font-size: 1.0625rem;
-    border: 1px solid #dddddd;
-  }
-
-  .header-search__city button {
-    padding: 1rem;
-    background: #0065fc;
-    color: white;
-    font-size: 0.9375rem;
-    border: 1px solid #ffffff;
-    border-left: none;
-    border-radius: 0rem 1.25rem 1.25rem 0rem;
-  }
-
-  .icon-location {
-    background: #f2f2f2;
-    padding: 1.125rem;
-    font-size: 0.9375rem;
-    border-radius: 0.9375rem 0rem 0rem 0.9375rem;
-  }
-
-  .info {
-    display: flex;
-    align-items: flex-start;
-    margin-top: 1.25rem;
-  }
-
-  .icon-info {
-    color: #0065fc;
-    margin-right: 0.625rem;
-  }
-
-  .header-search__filter {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 1.875rem 0;
-  }
-
-  .header-search-filter__item {
-    display: flex;
-  }
-
-  .header-search-filter__item button {
-    align-items: center;
-    font-weight: bold;
-    border: 3px solid #f2f2f2;
-    border-radius: 3rem;
-    padding-right: 1.9em;
-    margin-left: 1.125rem;
-    background-color: #ffffff;
-    font-size: 0.9375rem;
-  }
-
-  .icon-filter {
-    border-radius: 50%;
-    background-color: #deebff;
-    color: #0065fc;
-    width: 1rem;
-    height: 1rem;
-    padding: 1.1rem;
-    margin-right: 1.1rem;
-    margin-left: -0.5rem;
-  }
-
-  .header-search__info {
-    display: flex;
-  }
-
-
-  main {
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "ad ad-featured"
-      "activity activity";
-  }
-
-
-
-  .ad {
-    background-color: #f2f2f2;
-    border-radius: 20px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 250px);
-    grid-template-rows: 50px 250px 250px;
-    gap: 0.625rem 0.625rem;
-    grid-template-areas:
-      "title title title"
-      "a b c"
-      "d e f";
-    grid-area: ad;
-
-    padding: 1.25rem;
-  }
-
-  .ad__title {
-    grid-area: title;
-    margin: 0.625rem;
-  }
-
-  .ad-card__info {
-    margin: 0.625rem;
-  }
-
-  .ad-card__info p {
-    padding: 0.625rem 0;
-  }
-
-  .button {
-    font-weight: bold;
-    font-size: 1.0625rem;
-    background: 0;
-    border: 0;
-    text-align: left;
-    margin: 0.625rem;
-    cursor: pointer;
-  }
-
-  .ad-card__img {
-    width: 100%;
-    height: 125px;
-    object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
-  }
-
-
-  .ad-featured {
-    background-color: #f2f2f2;
-    border-radius: 20px;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr 1fr 1fr;
-    gap: 0.625rem 0.625rem;
-    grid-template-areas:
-      "title"
-      "a"
-      "b"
-      "c";
-    grid-area: ad-featured;
-
-    padding: 1.25rem;
-  }
-
-  .ad-featured__title {
-    grid-area: title;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin: 0.625rem;
-  }
-
-  .ad-featured__card {
-    display: flex;
-  }
-
-  .ad-featured-card__img {
-    width: 130px;
-    height: 152px;
-    object-fit: cover;
-    border-radius: 15px 0px 0px 15px;
-  }
-
-  .ad-featured-card__info {
-    padding: 1.25rem 1.25rem 0 1.25rem;
-  }
-
-  .ad-featured-card__info p {
-    padding: 0.625rem 0 2.8125rem;
-  }
-
-
-  .activity {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 50px 250px 250px;
-    gap: 0.625rem 0.625rem;
-    grid-template-areas:
-      "title title title title"
-      "a b d e"
-      "a c d f";
-    grid-area: activity;
-
-    margin-top: 1.875rem;
-  }
-
-  .activity__title {
-    grid-area: title;
-    margin: 0.625rem;
-  }
-  .large-card-1 {
-    grid-area: a;
-  }
-  .large-card-2 {
-    grid-area: d;
-  }
-
-  .activity__card {
-    padding: 0;
-  }
-
-  .activity-card__title {
-    padding: 0.8125rem 0 0.625rem 0.9375rem;
-    font-size: 1rem;
-    margin: 0;
-    padding-bottom: 0.3125rem;
-    font-weight: bold;
-  }
-
-  .activity-card__img {
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
-  }
-
-  .large-card-1 .activity-card__img,
-  .large-card-2 .activity-card__img {
-    height: 90%;
-  }
-
-
-  footer {
-    background-color: #f2f2f2;
-    display: flex;
-    height: 200px;
-    padding: 3.125rem 3.125rem 0;
-  }
-
-  .footer-nav {
-    display: flex;
-    flex-direction: column;
-    padding-right: 12.5rem;
-  }
-
-  .footer-nav li {
-    padding-top: 0.625rem;
-  }
-
-  .footer-nav h3 {
-    padding-bottom: 0.625rem;
-  }
-}
-
-*/
