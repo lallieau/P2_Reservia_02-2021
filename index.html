@@ -4,6 +4,7 @@
     <title>Reservia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
+    <link rel="icon" href="images/favicon-reservia.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
@@ -16,7 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
   </head>
 
@@ -44,8 +45,8 @@
         <p>En plein centre ville ou en pleine nature</p>
         <div class="header-search__city">
           <i class="fas fa-map-marker-alt icon-location"></i>
-          <input type="text" name="search" placeholder="Marseille, France" />
-          <button type="submit">
+          <input class="header-search-city__field" type="text" name="search" placeholder="Marseille, France" />
+          <button class="header-search-city__submit" type="submit">
             <span class="submit-text">Rechercher</span>
             <i class="fas fa-search icon-search"></i>
           </button>
@@ -79,16 +80,16 @@
     </header>
 
     <main>
-      <section class="ad">
-        <h2 class="ad__title" id="ad">Hébergements à Marseille</h2>
+      <section class="advertisements">
+        <h2 class="advertisements__title" id="advertisements">Hébergements à Marseille</h2>
 
-        <a href="#" class="ad__card">
+        <a href="#" class="advertisements__card">
           <img
-            class="ad-card__img"
+            class="advertisements-card__img"
             src="images/hebergements/auberge-de-la-cannebiere.jpg"
             alt="photo d'un hébergement"
           />
-          <div class="ad-card__info">
+          <div class="advertisements-card__info">
             <h3>Auberge la Cannebière</h3>
             <p>Nuit à partir de 25€</p>
             <div class="score">
@@ -101,13 +102,13 @@
           </div>
         </a>
 
-        <a href="#" class="ad__card">
+        <a href="#" class="advertisements__card">
           <img
-            class="ad-card__img"
+            class="advertisements-card__img"
             src="images/hebergements/hotel-du-port.jpg"
             alt="photo d'un hébergement"
           />
-          <div class="ad-card__info">
+          <div class="advertisements-card__info">
             <h3>Hôtel du port</h3>
             <p>Nuit à partir de 52€</p>
             <div class="score">
@@ -120,13 +121,13 @@
           </div>
         </a>
 
-        <a href="#" class="ad__card">
+        <a href="#" class="advertisements__card">
           <img
-            class="ad-card__img"
+            class="advertisements-card__img"
             src="images/hebergements/hotel-les-mouettes.jpg"
             alt="photo d'un hébergement"
           />
-          <div class="ad-card__info">
+          <div class="advertisements-card__info">
             <h3>Hôtel Les mouettes</h3>
             <p>Nuit à partir de 76€</p>
             <div class="score">
@@ -139,13 +140,13 @@
           </div>
         </a>
 
-        <a href="#" class="ad__card">
+        <a href="#" class="advertisements__card">
           <img
-            class="ad-card__img"
+            class="advertisements-card__img"
             src="images/hebergements/hotel-de-la-mer.jpg"
             alt="photo d'un hébergement"
           />
-          <div class="ad-card__info">
+          <div class="advertisements-card__info">
             <h3>Hôtel de la mer</h3>
             <p>Nuit à partir de 46€</p>
             <div class="score">
@@ -158,13 +159,13 @@
           </div>
         </a>
 
-        <a href="#" class="ad__card">
+        <a href="#" class="advertisements__card">
           <img
-            class="ad-card__img"
+            class="advertisements-card__img"
             src="images/hebergements/auberge-le-panier.jpg"
             alt="photo d'un hébergement"
           />
-          <div class="ad-card__info">
+          <div class="advertisements-card__info">
             <h3>Auberge Le Panier</h3>
             <p>Nuit à partir de 23€</p>
             <div class="score">
@@ -177,13 +178,13 @@
           </div>
         </a>
 
-        <a href="#" class="ad__card">
+        <a href="#" class="advertisements__card">
           <img
-            class="ad-card__img"
+            class="advertisements-card__img"
             src="images/hebergements/hotel-chez-amina.jpg"
             alt="photo d'un hébergement"
           />
-          <div class="ad-card__info">
+          <div class="advertisements-card__info">
             <h3>Hôtel chez Amina</h3>
             <p>Nuit à partir de 96€</p>
             <div class="score">
@@ -198,19 +199,19 @@
         <button class="button">Afficher plus</button>
       </section>
 
-      <section class="ad-featured">
-        <div class="ad-featured__title">
+      <section class="advertisements-featured">
+        <div class="advertisements-featured__title">
           <h2>Les plus populaires</h2>
           <i class="fas fa-chart-line icon-chart-line"></i>
         </div>
 
-        <a href="#" class="ad-featured__card">
+        <a href="#" class="advertisements-featured__card">
           <img
-            class="ad-featured-card__img"
+            class="advertisements-featured-card__img"
             src="images/hebergements/hotel-le-soleil-du-matin.jpg"
             alt="photo d'un hébergement"
           />
-          <div class="ad-featured-card__info">
+          <div class="advertisements-featured-card__info">
             <h3>Hôtel Le soleil du matin</h3>
             <p>Nuit à partir de 128€</p>
             <div class="score">
@@ -223,13 +224,13 @@
           </div>
         </a>
 
-        <a href="#" class="ad-featured__card">
+        <a href="#" class="advertisements-featured__card">
           <img
-            class="ad-featured-card__img"
+            class="advertisements-featured-card__img"
             src="images/hebergements/au-coeur-de-l-eau-chambres-d-hotes.jpg"
             alt="photo d'un hébergement"
           />
-          <div class="ad-featured-card__info">
+          <div class="advertisements-featured-card__info">
             <h3>Au coeur de l'eau Chambres d'hôtes</h3>
             <p>Nuit à partir de 71€</p>
             <div class="score">
@@ -242,13 +243,13 @@
           </div>
         </a>
 
-        <a href="#" class="ad-featured__card">
+        <a href="#" class="advertisements-featured__card">
           <img
-            class="ad-featured-card__img"
+            class="advertisements-featured-card__img"
             src="images/hebergements/hotel-tout-bleu-et-blanc.jpg"
             alt="photo d'un hébergement"
           />
-          <div class="ad-featured-card__info">
+          <div class="advertisements-featured-card__info">
             <h3>Hôtel Tout bleu et Blanc</h3>
             <p>Nuit à partir de 68€</p>
             <div class="score">

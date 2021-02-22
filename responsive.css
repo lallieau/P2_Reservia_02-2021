@@ -1,55 +1,76 @@
-@media (min-width: 600px) {
-  /* ad */
-  .ad {
+:root {
+  --desktop-margin: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  /* 
+  Change in css grid. 
+  Modification of the ad section and the activity section. 
+  */
+
+  .advertisements {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50px 300px 300px 300px;
+    grid-template-rows: 50px 1fr 1fr 1fr;
     grid-template-areas:
       "title title"
-      "a b"
-      "c d"
-      "e f";
+      "product-card product-card"
+      "product-card product-card"
+      "product-card product-card";
   }
 
-  /* activity */
   .activity {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px 250px 250px 250px;
     grid-template-areas:
       "title title"
-      "a b"
-      "c d"
-      "e f";
+      "activity-card activity-card"
+      "activity-card activity-card"
+      "activity-card activity-card";
   }
 
   .activity-card__img {
     height: 80%;
   }
-  /* Footer */
+
+  /* Adapted footer layout */
+
   footer {
-    padding: 3.125rem;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
-@media (min-width: 992px) {
-  /* header-nav */
+@media (min-width: 1280px) {
+  main,
+  header {
+    max-width: 1440px;
+    margin: auto;
+  }
+
+  /* 
+  Adaptation of the navigation bar to desktop 
+  and modification of the elements in the search bar.
+  */
+
   .header-nav--anchor {
     width: auto;
     order: initial;
   }
 
+  .header-nav__link--active {
+    width: 50%;
+    color: var(--primary-color);
+    border-top: 3px solid var(--primary-color);
+  }
+
   .header-nav__link {
     border-bottom: none;
-    padding: 0rem 1.25rem 0.625rem 4rem;
   }
 
   .header-nav-link--logo {
     padding: 0;
   }
 
-  /* header-search */
   .submit-text {
     display: block;
   }
@@ -58,113 +79,76 @@
     display: none;
   }
 
-  /* ad */
-  .ad {
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    margin: 1.25rem;
+  /* 
+  Change in css grid. 
+  Changing the layout of the main content.
+  Modification of the ad section, 
+  the ad featured section 
+  and the activity section. 
+  */
 
-    grid-template-columns: repeat(3, 290px);
-    grid-template-rows: 50px 250px 250px;
-    grid-template-areas:
-      "title title title"
-      "a b c"
-      "d e f";
-  }
-
-  .ad-card__img {
-    height: 130px;
-  }
-
-  /* ad-featured */
-  .ad-featured {
-    background-color: #f2f2f2;
-    border-radius: 20px;
-    margin: 1.25rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50px 180px 180px;
-    grid-template-areas:
-      "title title"
-      "a b"
-      "c .";
-  }
-
-  /* activity */
-
-  .activity {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 250px 250px 250px;
-    grid-template-areas:
-      "title title title"
-      "a b d"
-      "a c d"
-      "e f .";
-  }
-
-  .large-card-1 {
-    grid-area: a;
-  }
-  .large-card-2 {
-    grid-area: d;
-  }
-  .large-card-1 .activity-card__img,
-  .large-card-2 .activity-card__img {
-    height: 90%;
-  }
-}
-
-@media (min-width: 1200px) {
-  main,
-  header {
-    max-width: 1400px;
-    margin: auto;
-  }
-
-  /* Main */
   main {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-      "ad ad ad-featured"
+      "advertisements advertisements advertisements-featured"
       "activity activity activity";
     justify-content: center;
   }
 
-  /* ad */
-  .ad {
+  .advertisements {
+    background-color: var(--background-color);
+    border-radius: var(--global-border-radius);
+    margin: var(--desktop-margin);
+
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 50px 1fr 1fr;
+    grid-template-areas:
+      "title title title"
+      "product-card product-card product-card"
+      "product-card product-card product-card";
   }
 
-  /* ad-featured */
-  .ad-featured {
+  .advertisements-card__img {
+    height: 135px;
+  }
+
+  .advertisements-featured {
+    background-color: var(--background-color);
+    border-radius: var(--global-border-radius);
+    margin: var(--desktop-margin);
+
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-template-rows: 50px 180px 180px 180px;
     grid-template-areas:
       "title"
-      "a"
-      "b"
-      "c";
+      "product-card"
+      "product-card"
+      "product-card";
   }
 
-  .ad-featured-card__img {
+  .advertisements-featured-card__img {
     width: 35%;
-    height: 158px;
   }
 
-  /* activity */
   .activity {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 50px 250px 250px;
     grid-template-areas:
       "title title title title"
-      "a b d e"
-      "a c d f";
-    margin-top: 1.875rem;
+      "large-card-1 min-card-1 large-card-2 min-card-3"
+      "large-card-1 min-card-2 large-card-2 min-card-4";
   }
 
-  /* Footer */
-  footer {
-    justify-content: space-around;
+  .large-card-1 {
+    grid-area: large-card-1;
+  }
+
+  .large-card-2 {
+    grid-area: large-card-2;
+  }
+  .large-card-1 .activity-card__img,
+  .large-card-2 .activity-card__img {
+    height: 90%;
   }
 }

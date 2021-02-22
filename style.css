@@ -1,0 +1,387 @@
+:root {
+  --background-color: #f2f2f2;
+  --primary-color: #0065fc;
+  --secondary-color: #deebff;
+
+  --section-padding: 1.25rem;
+
+  --section-gap: 1.625rem 1.625rem;
+  --content-spacing: 0.625rem;
+
+  --icon-size: 0.8125rem;
+
+  --small-img: 100px;
+
+  --global-border-radius: 20px;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-size: 1.4375rem;
+}
+
+h3 {
+  font-size: 1.0625rem;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* 
+Header layout. Layout of the navigation bar, 
+the search bar and the filter selection. 
+*/
+
+header {
+  padding: var(--section-padding);
+}
+
+.header-nav-link__img {
+  width: var(--small-img);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-nav--anchor {
+  margin-left: auto;
+  width: 100%;
+  order: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-nav__link {
+  text-align: center;
+  padding: var(--content-spacing);
+  border-bottom: 3px solid var(--background-color);
+  width: 50%;
+}
+
+.header-nav__link:hover {
+  color: var(--primary-color)
+}
+
+.header-nav-link--logo {
+  border: none;
+  width: auto;
+}
+
+.header-nav__link--active {
+  width: 50%;
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.header-nav-link--register {
+  color: var(--primary-color);
+  font-weight: bold;
+  border: none;
+  width: auto;
+}
+
+.header-search {
+  margin: 1.25rem 0;
+}
+
+.header-search h1 {
+  padding: var(--content-spacing) 0;
+}
+.header-search__city {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 0 0;
+}
+
+.submit-text {
+  display: none;
+}
+
+.header-search-city__field {
+  padding: var(--content-spacing);
+  font-size: 1.0625rem;
+  border: 1px solid #dddddd;
+}
+
+.header-search-city__submit {
+  padding: 0.825rem;
+  background: var(--primary-color);
+  color: #ffffff;
+  font-size: var(--icon-size);
+  border: 1px solid #ffffff;
+  border-left: none;
+  border-radius: 0rem 1.25rem 1.25rem 0rem;
+}
+
+.icon-location {
+  background: var(--background-color);
+  padding: 0.925rem;
+  font-size: var(--icon-size);
+  border-radius: 0.9375rem 0rem 0rem 0.9375rem;
+}
+
+.icon-info {
+  color: var(--primary-color);
+  margin-right: var(--content-spacing);
+}
+
+.header-search__filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1.875rem 0;
+}
+
+.header-search-filter__item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.header-search-filter__item button {
+  align-items: center;
+  font-weight: bold;
+  border: 3px solid var(--background-color);
+  border-radius: 3rem;
+  padding-right: 2.9em;
+  margin: 0.125rem;
+  background-color: #ffffff;
+  font-size: 0.9375rem;
+}
+
+.icon-filter {
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  width: 1rem;
+  height: 1rem;
+  padding: 1.1rem;
+  margin-right: 1.1rem;
+  margin-left: -0.5rem;
+}
+
+.header-search__info {
+  display: flex;
+}
+
+/* 
+Layout of main content. 
+Layout of the ads section, 
+the featured ads section 
+and the activity section. 
+*/
+
+main {
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  grid-template-areas:
+    "advertisements-featured"
+    "advertisements"
+    "activity";
+}
+
+.advertisements__card,
+.advertisements-featured__card,
+.activity__card {
+  background-color: #ffffff;
+  padding: 0.3125rem;
+  border-radius: var(--global-border-radius);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+}
+
+.advertisements__card:hover,
+.advertisements-featured__card:hover,
+.activity__card:hover {
+  transform: scale(1.02);
+}
+
+.icon-default-star {
+  font-size: var(--icon-size);
+  color: #dddddd;
+}
+.icon-blue-star {
+  font-size: var(--icon-size);
+  color: var(--primary-color);
+}
+.icon-chart-line {
+  font-size: 1.25rem;
+}
+
+.advertisements {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: var(--section-gap);
+  grid-template-areas:
+    "title"
+    "product-card"
+    "product-card"
+    "product-card"
+    "product-card"
+    "product-card"
+    "product-card";
+  grid-area: advertisements;
+
+  padding: var(--section-padding);
+}
+
+.advertisements__title {
+  grid-area: title;
+  margin: var(--content-spacing);
+}
+
+.advertisements-card__info {
+  margin: var(--content-spacing);
+}
+
+.advertisements-card__info p {
+  padding: var(--content-spacing) 0;
+}
+
+.button {
+  font-weight: bold;
+  font-size: 1.0625rem;
+  background: 0;
+  border: 0;
+  text-align: left;
+  margin: var(--content-spacing);
+  cursor: pointer;
+}
+
+.advertisements-card__img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.advertisements-featured {
+  background-color: var(--background-color);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 150px 150px 150px;
+  gap: var(--section-gap);
+  grid-template-areas:
+    "title"
+    "product-card"
+    "product-card"
+    "product-card";
+  grid-area: advertisements-featured;
+
+  padding: var(--section-padding);
+}
+
+.advertisements-featured__title {
+  grid-area: title;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: var(--content-spacing);
+}
+
+.advertisements-featured__card {
+  display: flex;
+}
+
+.advertisements-featured-card__img {
+  width: 40%;
+  object-fit: cover;
+  border-radius: 15px 0px 0px 15px;
+}
+
+.advertisements-featured-card__info {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title"
+    "subtitle"
+    "."
+    "score";
+
+  padding: var(--section-padding);
+}
+
+.advertisements-featured-card__info .score {
+  grid-area: score;
+}
+
+.activity {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: var(--section-gap);
+  grid-template-areas:
+    "title"
+    "activity-card"
+    "activity-card"
+    "activity-card"
+    "activity-card"
+    "activity-card"
+    "activity-card";
+  grid-area: activity;
+
+  padding: var(--section-padding);
+}
+
+.activity__title {
+  grid-area: title;
+  margin: var(--content-spacing);
+}
+
+.activity__card {
+  padding: 0;
+}
+
+.activity-card__title {
+  padding: var(--content-spacing);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.activity-card__img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+/* Footer layout */
+
+footer {
+  background-color: var(--background-color);
+  padding: 3.125rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav li {
+  padding: var(--content-spacing);
+}
+
+.footer-nav li a:hover {
+  text-decoration: underline;
+}
