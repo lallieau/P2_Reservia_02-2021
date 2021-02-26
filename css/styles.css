@@ -318,13 +318,13 @@ main {
     "title"
     "subtitle"
     "."
-    "score";
+    "stars";
 
   padding: var(--section-padding);
 }
 
-.advertisements-featured-card__info .score {
-  grid-area: score;
+.advertisements-featured-card__info .stars {
+  grid-area: stars;
 }
 
 .activity {
