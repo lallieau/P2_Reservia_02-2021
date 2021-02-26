@@ -1,6 +1,5 @@
-# Projet 5 Blog PHP (OC)
+# Projet 2 Reservia (OpenClassrooms)
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/543da12634be43908cfba582bff22c56)](https://www.codacy.com/manual/lallieau/blog?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lallieau/blog&amp;utm_campaign=Badge_Grade)
 
 Début du projet : février 2021
 
@@ -23,7 +22,7 @@ Languages utilisés:
 
 Captures d'écran :
 
-<img src="https://github.com/lallieau/blog/blob/master/public/img/capture_home.png" alt="Your image title" width="200"/> <img src="https://github.com/lallieau/blog/blob/master/public/img/capture_articles.png" alt="Your image title" width="200"/> <img src="https://github.com/lallieau/blog/blob/master/public/img/capture_profil.png" alt="Your image title" width="200"/>
+<img src="https://github.com/lallieau/P2_Reservia_010121/blob/main/images/maquettes/Desktop.png" alt="Desktop" width="200"/> <img src="https://github.com/lallieau/P2_Reservia_010121/blob/main/images/maquettes/iPhone.png" alt="Mobile" width="200"/>
 
 ## Pré-requis
 Ce qu'il est requis pour commencer :
