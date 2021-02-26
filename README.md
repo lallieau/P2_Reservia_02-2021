@@ -20,10 +20,6 @@ Cette maquette est séparée en cinq parties (header, section hébergements, sec
 Languages utilisés:
 - Html et Css
 
-Captures d'écran :
-
-<img src="https://github.com/lallieau/P2_Reservia_010121/blob/main/images/maquettes/Desktop.png" alt="Desktop" width="200"/> <img src="https://github.com/lallieau/P2_Reservia_010121/blob/main/images/maquettes/iPhone.png" alt="Mobile" width="200"/>
-
 ## Pré-requis
 Ce qu'il est requis pour commencer :
 - Un IDE (ex : VS Code)
@@ -32,3 +28,10 @@ Ce qu'il est requis pour commencer :
 Les étapes pour installer :
 - Cloner le projet sur votre machine.
 https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
+
+## Maquettes
+- Desktop :
+<img src="https://github.com/lallieau/P2_Reservia_010121/blob/main/images/maquettes/Desktop.png" alt="Desktop" width="500"/> 
+<br>
+- Mobile :
+<img src="https://github.com/lallieau/P2_Reservia_010121/blob/main/images/maquettes/iPhone.png" alt="Mobile" width="200"/>
