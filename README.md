@@ -11,7 +11,7 @@ Bienvenue dans mon premier projet de la formation développeur front-end !
 Ceci est un exercice d'apprentissage des langages HTML et CSS en fonction d'une maquette mobile et desktop.
 
 Lien pour visualiser le projet:
-https://lallieau.github.io/P2_Reservia_010121/
+https://lallieau.github.io/P2_Reservia/
 
 Contenu :
 Vous retrouverez dans ce projet une page présentant différents hébergements proposés à la location. Ces hébergements sont présentés sous forme de carte.
