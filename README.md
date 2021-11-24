@@ -1,37 +1,17 @@
-# Projet 2 Reservia (OpenClassrooms)
+# P2_Reservia_02-2021
 
+Openclassrooms - Parcours développeur Front-end
 
-Début du projet : février 2021
+## Projet 2 : Transformez une maquette en site web avec HTML & CSS
 
-Fin du projet : mars 2021
+Lien pour visualiser le projet: https://lallieau.github.io/P2_Reservia_02-2021/
 
-## Présentation du projet
+Scénario : 
+Reservia est une petite entreprise proposant un outil de planification de vacances ! 
 
-Bienvenue dans mon premier projet de la formation développeur front-end !
-Ceci est un exercice d'apprentissage des langages HTML et CSS en fonction d'une maquette mobile et desktop.
+Son site permet aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Les hébergements peuvent également être filtrés par thématique, par exemple leur budget ou leur ambiance.
 
-Lien pour visualiser le projet:
-https://lallieau.github.io/P2_Reservia/
+Mission : 
+* Intégration des maquettes de design en HTML / CSS.
 
-Contenu :
-Vous retrouverez dans ce projet une page présentant différents hébergements proposés à la location. Ces hébergements sont présentés sous forme de carte.
-Cette maquette est séparée en cinq parties (header, section hébergements, section hébergements en vedette, section activités et footer).
-
-Languages utilisés:
-- Html et Css
-
-## Pré-requis
-Ce qu'il est requis pour commencer :
-- Un IDE (ex : VS Code)
-
-## Installation
-Les étapes pour installer :
-- Cloner le projet sur votre machine.
-https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository
-
-## Maquettes
-- Desktop :
-<img src="https://github.com/lallieau/P2_Reservia_010121/blob/main/images/maquettes/Desktop.png" alt="Desktop" width="500"/> 
-<br>
-- Mobile :
-<img src="https://github.com/lallieau/P2_Reservia_010121/blob/main/images/maquettes/iPhone.png" alt="Mobile" width="200"/>
+Langues : HTML et CSS
